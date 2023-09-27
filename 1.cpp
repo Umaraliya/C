@@ -9,15 +9,15 @@ void getData()
     cin >> a;
 
     cout << "Enter B value :";
-    cin >>"%d",&b;
+    cin >> b;
 
     if(a > b)
     {
-        cout <<"A is big %d", a;
+        cout <<"A is big : " << a;
     }
     else
     {
-        cout <<"B is big %d", b;
+        cout <<"B is big : " << b;
     }
 }
 
