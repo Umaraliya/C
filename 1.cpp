@@ -8,16 +8,16 @@ void getData()
     cout <<"Enter A value :"<< endl;
     cin >> a;
 
-    printf("Enter B value :");
-    scanf("%d",&b);
+    cout << "Enter B value :";
+    cin >>"%d",&b;
 
     if(a > b)
     {
-        printf("A is big %d", a);
+        cout <<"A is big %d", a;
     }
     else
     {
-        printf("B is big %d", b);
+        cout <<"B is big %d", b;
     }
 }
 
