@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i,j,l=1,n,k=3;
+	int i,j,l=1,n=3,k;
 
 	for(i=1;i<=5;i++)
 {
@@ -13,8 +13,8 @@ int main()
 }
 	for(k=1;k<2;k++)
 {
-	l=l+k;
-	k=k+2;
+	l=l+n;
+	n=n+2;
 }
 	printf("\n");
 }

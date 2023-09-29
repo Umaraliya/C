@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+
+{
+	int slab, total;
+	clrscr();
+
+	printf("Enter value slab");
+	scanf("%d",&slab);
+
+	if(slab <= 2500)
+	{
+		total = slab * 0.0;
+	}
+
+	else if(slab >= 2500 && slab <= 5000)
+	{
+		total = slab * 0.1;
+	}
+
+	else if(slab >= 5000 && slab <= 10000)
+	{
+		total = slab * 0.2;
+	}
+	else if(slab >= 10000)
+	{
+		total = slab * 0.3;
+	}
+
+	if(total >= 10000)
+	{
+		total = total + total ;
+	}
+		printf("Total is : %d",total);
+
+
+	getch();
+}
