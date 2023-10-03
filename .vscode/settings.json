@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "123.C": "cpp",
-        "CAPI_SMA.C": "cpp"
+        "CAPI_SMA.C": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -32,10 +32,10 @@ void std(int m, int s, int e, int g)
 int main()
 {
     student s1[2];
-    int a[2], b[2], c[2], d[2], i;
+    int a[2], b[2], c[2], d[2];
 
-    for(int i ;i < 2; i++)
-
+    for(int i = 0;i < 2; i++)
+    {
     cout << "maths : ";
     cin >> a[i];
 
@@ -47,8 +47,8 @@ int main()
 
     cout << "gujrati : ";
     cin >> d[i];
-
-    for(int i ; i < 2; i++)
+    }
+    for(int i = 0; i < 2; i++)
     {
         s1[i].std(a[i] ,b[i] ,c[i] ,d[i]);
     }
