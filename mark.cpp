@@ -47,7 +47,7 @@ int main()
 
     cout << "gujrati : ";
     cin >> d[i];
-    }
+    
     for(int i = 0; i < 2; i++)
     {
         s1[i].std(a[i] ,b[i] ,c[i] ,d[i]);
