@@ -1,2 +1,1 @@
-private:
-//     int b, h;
+student s1;

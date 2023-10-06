@@ -44,9 +44,9 @@ int main()
     cin >> id >> age;
     cin>>name ;
     
-    s1.getid(id);
-    s1.getname(name);
-    s1.getage(age);
+    s1.getid();
+    s1.getname();
+    s1.getage();
 
     return 0;
 }
