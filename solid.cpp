@@ -5,90 +5,52 @@ using namespace std;
 class solid
 {
 private:
-    int length, height, width, radius, breadth, side;
+    int h, r, b;
 
 public:
-    solid()
+    solid(int height, float radius, int base)
     {
-        cout << "Length is : ";
-        cin >> length;
+        int h = height;
+        float r = radius;
+        int b = base;
+    }
+    void area(float radius)
+    {
+        float r = radius;
 
-        cout << "Height is : ";
-        cin >> height;
+        float Area_Circle = 3.14 * (r * r);
 
-        cout << "Width is : ";
-        cin >> width;
-
-        cout << "Breadth is : ";
-        cin >> breadth;
-
-        cout << "Radius is : ";
-        cin >> radius;
-
-        cout << "Side is : ";
-        cin >> side;
+        cout << "Circle is : " << Area_Circle << endl;
     }
 
-    void area()
+    void area(int base)
     {
-        int ans = 3.14 * radius * radius;
+        int b = base;
 
-        cout << "Circle is : " << ans << endl;
+        int Ans =  (h * b)/ 2;
+
+        cout << "Answer is : " << Ans << endl;
     }
 
-    void area()
-    {
-        int ans =  (height * breadth)/ 2;
-
-        cout << "Answer is : " << ans << endl;
-    }
-
-    void area()
-    {
-        int ans = 2 * height ( length + breadth);
-
-        cout << "Answer is : " << ans << endl;
-    }
-
-    void area()
-    {
-        int ans = 4 * side * side;
-
-        cout << "Answer is : " << ans << endl;
-    }
-
-    void area()
-    {
-        int ans = 2 * 3.14 * radius * height;
-
-        cout << "Answer is : " << ans << endl;
-    }
-
-    void area()
-    {
-        int ans = 3.14 * radius * length;
-
-        cout << "Answer is : " << ans << endl;
-    }
-
-    void area()
-    {
-        int ans = 4 * 3.14 * radius * radius;
-
-        cout << "Answer is : " << ans << endl;
-    }
 };
 
 int main()
 {
-    solid s1,s2,s3,s4,s5,s6,s7;
+    solid s1, s2;
 
-    s1.area();
-    s2.area();
-    s3.area();
-    s4.area();
-    s5.area();
-    s6.area();
-    s7.area();
+    int a, b, c;
+
+    cout << "Enter value Height : ";
+    cin >> a;
+
+    cout << "Enter value Radius : ";
+    cin >> b;
+
+    cout << "Enter value Base : ";
+    cin >> c;
+
+    s1.area(b);
+    s2.area(a, c);
+    
     return 0;
 }
