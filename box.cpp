@@ -51,25 +51,17 @@ public:
     box operator/(box &n)
     {
         box m;
-        if(n.l != 0)
-        {
+        if (n.l != 0 && n.w != 0 && n.h != 0){
             m.l = l / n.l;
-        }
-        else if (n.w != 0)
-        {
             m.w = w / n.w;
-        }
-        else if (n.h != 0)
-        {
             m.h = h / n.h;
+            return m;
         }
+        // m.l = l / n.l;
+        // m.w = w / n.w;
+        // m.h = h / n.h;
         
-        // if (n.l != 0 && n.w != 0 && n.h != 0){
-        //     m.l = l / n.l;
-        //     m.w = w / n.w;
-        //     m.h = h / n.h;
-        // }
-        // return m; 
+        // return m;
     }
 };
 
@@ -92,6 +84,6 @@ int main()
     b5 = b1 * b2;
     cout << "Volume of B5 is : " << b5.getVolume() << endl;
 
-    b4 = b5 / b2;
+    b6 = b5 / b2;
     cout << "Volume of B6 is : " << b6.getVolume() << endl;
 }
