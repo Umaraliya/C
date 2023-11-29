@@ -3,6 +3,7 @@
         "123.C": "cpp",
         "CAPI_SMA.C": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "VOTING.C": "cpp"
     }
 }
